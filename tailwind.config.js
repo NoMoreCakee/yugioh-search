@@ -1,5 +1,5 @@
 module.exports = {
-    content: ["./dist/style.css", "./src/style.css", "./dist/index.html"],
+    content: ["./src/style.css", "./dist/style.css", "./src/index.html"],
     theme: {
         extend: {},
         colors: {

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body class="bg-black-600 p-2 m-0">
+        <div
+            class="container mx-auto w-fit max-w-lg p-6 pt-10 bg-black-400 m-5 rounded-lg"
+            id="cont"
+        >
+            <h1 class="title text-orange-500 font-main text-center text-4xl">
+                Search Yu-gi-oh! Cards
+            </h1>
+            <hr class="my-4 mb-11 text-white" />
+            <div class="w-fit mx-auto">
+                <label class="text-white text-xl">Name</label>
+                <br />
+                <input
+                    type="text"
+                    name="cardinput"
+                    placeholder="Blue-Eyes White Dragon"
+                    id="cardinput"
+                    class="w-full text-2xl px-2 py-1 rounded-md my-2 placeholder:text-black-600"
+                />
+                <button
+                    id="submitbutton"
+                    class="bg-orange-500 text-white text-lg w-full py-1 rounded-md my-2"
+                >
+                    Search!
+                </button>
+            </div>
+            <div
+                id="cards"
+                class="my-4 sm:flex sm:w-full w-3/4 mx-auto items-center"
+            >
+                <div id="img" class="w-full box-border sm:basis-5/12">
+                    <img src="" alt="" id="cardimg" class="w-full" />
+                </div>
+                <div id="specs" class="sm:w-1/2 sm:ml-3 mr-0 mt-3">
+                    <p class="text-white w-full my-2" id="cardname"></p>
+                    <p class="text-white w-full my-2" id="cardtype"></p>
+                    <p class="text-white w-full my-2" id="carddesc"></p>
+                    <p class="text-white w-full my-2" id="cardprice"></p>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
